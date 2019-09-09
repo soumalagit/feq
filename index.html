@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="themes/personnaliseTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<style type="text/css">
+		td{
+
+			width: 200px;
+			text-align: center;
+		}
+		table{
+			background-color: white;
+			/*border: 1px black solid;*/
+			border-radius: 1em;
+			margin: auto;
+			border-spacing: 20px;
+		}
+		img.logo{
+			margin: auto;
+			width: 200px;
+		}
+		a{
+			text-decoration: none;
+			text-decoration-color: black;
+		}
+		#mapid { 
+			height: 180px; 
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div data-role="page" id="acceuil" data-theme="a">
+		<div data-role="header">
+			<h1>
+				Festival d'été de
+			</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+			<h1 style="text-align: center;">
+				QUEBEC
+			</h1>
+			<p style="text-align: justify;">
+				Depuis 50 ans, le festivale d'été de Québec anime et colore les étés des Québécois. Au fil des ans, le Festival a acceuilli de véritables légendes et des artistes de l'heure sur son site principal, la scène Beil. Située sur le champ de bataille historique des plaines d'Abraham, elle est la plus grande scène autoportante en Amérique du Nord et son site peut acceuillir jusqu'à 80 000 personnes.
+			</p>
+
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#programme" data-transition="pop">Le programme</a> 
+				</li>
+				<li>
+					<a href="#artiste" data-transition="pop">Artiste</a>
+				</li>
+				<li>
+					<a href="#partenaire" data-transition="pop">Nos partenaires</a>
+				</li>
+				<li>
+					<a href="#video" data-transition="pop">Quelques vidéos</a>
+				</li>
+				<li>
+					<a href="#sondage" data-transition="pop">Nous contacter</a>
+				</li>
+			</ul>
+		</div>
+		<a data-role="button" data-inline="true" data-icon="forward" data-iconpos="right" data-mini="true" style="border-radius: 0%;" href="location.html" target="_blank">Comment s'y rendre</a>
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+
+	<div data-role="page" id="programme" data-theme="a">
+		<div data-role="header">
+			<button class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-right"><a href="#acceuil">Principale</a></button>
+			<h1>
+				FEQ
+			</h1>
+		</div>
+		<div data-role="content">
+
+
+			<h2>
+				Programme
+			</h2>
+
+			<div data-role="collapsibleset" data-theme="a" data-content-theme="">
+				<div data-role="collapsible">
+					<h2>Jeudi 5 juillet</h2>
+					<figure>
+						<img style="height: 250px;" src="images/maitre_gims.jpg">
+						<figcaption>Maitre Gims</figcaption>
+					</figure>
+					<p style="text-align: justify;">
+						Gandhi Djuna, alias Gims (prononcé : [ɡims] ; anciennement Maître Gims), né le 6 mai 1986 à Kinshasa, au Zaïre (Aujourd'hui : République démocratique du Congo), est un chanteur, rappeur et compositeur congolais.
+
+						Membre du groupe Sexion d'Assaut, il sort son premier album solo Subliminal en 2013, qui s'écoule à un million d'exemplaires1. Deux autres albums suivent, Mon cœur avait raison (2015) et Ceinture noire (2018).
+
+						Il a vendu plus de 5 millions de disques2, dont 2,3 millions d'albums depuis le début de sa carrière1.
+					</p>
+
+					<a data-role="button" data-icon="info" data-inline="true" data-mini="true" href="https://fr.wikipedia.org/wiki/Gims" target="_blank">Lien web</a>
+					
+
+				</div>
+				<div data-role="collapsible">
+					<h2>Vendredi 6 juillet</h2>
+					<figure>
+						<img style="height: 250px;" src="images/arafat.jpg">
+						<figcaption>Dj Arafat</figcaption>
+					</figure>
+					<p style="text-align: justify;">
+						DJ Arafat, de son vrai nom Ange Didier Houon1, parfois appelé Yôrôbô, Commandant Zabra, anciennement Sao Tao le Dictateur, Zeus d'Afrique, Influenmento, Thémistocle, Beerus Sama, Le Daishinkan alias le President de la Chine et aussi surnommé Le Roi du Coupé-décalé2, né à Yopougon ou Cocody le 26 janvier 1986 et mort accidentellement le 12 août 2019 à Abidjan3, est un chanteur, compositeur, producteur et arrangeur musical ivoirien.
+
+						Il est considéré par beaucoup[Combien ?][Par qui ?] comme l'un des plus grands chanteurs d'Afrique subsaharienne et un ambassadeur du coupé-décalé, ayant eu sur la culture musicale ivoirienne une influence considérable4.
+					</p>
+
+					<a data-role="button" data-icon="info" data-mini="true" data-inline="true" href="https://fr.wikipedia.org/wiki/DJ_Arafat" target="_blank">Lien web</a>
+					
+				</div>
+				<div data-role="collapsible">
+					<h2>Samedi 7 juillet</h2>
+					<figure>
+						<img style="height: 250px;" src="images/angelique.jpg">
+						<figcaption>Angelique Kidjo</figcaption>
+					</figure>
+					<p style="text-align: justify;">
+						Angélique Kpasseloko Hinto Hounsinou Kandjo Manta Zogbin Kidjo, née le 14 juillet 1960 à Ouidah (Bénin)1,2, dite Angélique Kidjo, est une chanteuse béninoise, lauréate des Grammy Awards et de l'Académie Charles Cros connue pour la diversité de ses influences musicales, l'originalité de ses clips et son engagement humanitaire comme ambassadrice internationale de l'UNICEF.
+					</p>
+
+					<a data-role="button" data-icon="info" data-mini="true" data-inline="true" href="https://fr.wikipedia.org/wiki/Ang%C3%A9lique_Kidjo" target="_blank">Lien web</a>
+					
+				</div>
+				<div data-role="collapsible">
+					<h2>Dimanche 8 juillet</h2>
+					<figure>
+						<img style="height: 250px;" src="images/fanicko.jpg">
+						<figcaption>Fanicko</figcaption>
+					</figure>
+					<p style="text-align: justify;">
+						Fanicko de Jésus, de son vrai nom Adjanohoun Fanick Olivier1, est un chanteur béninois, né le 12 juillet 1992 à Cotonou au Bénin2.
+
+						Il compte une vingtaine de singles et est considéré aujourd'hui comme une étoile de la musique urbaine au Bénin3.
+					</p>
+
+					<a data-role="button" data-icon="info" data-mini="true" data-inline="true" href="https://fr.wikipedia.org/wiki/Fanicko" target="_blank">Lien web</a>
+					
+				</div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+
+	<div data-role="page" id="artiste" data-theme="a">
+		<div data-role="header">
+			<button class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-right"><a href="#acceuil">Principale</a></button>
+			<h1>
+				FEQ
+			</h1>
+		</div>
+		
+		<div data-role="content">
+			<h2>
+				Artistes
+			</h2>
+
+			<ul data-role="listview" data-inset="true">
+				<li><a href="https://fr.wikipedia.org/wiki/DJ_Arafat" target="_blank">
+					<img src="images/arafat.jpg">
+					<h1>Dj Arafat</h1>
+					<p>Artiste du coupé décalé</p></a>
+				</li>
+				<li><a href="https://fr.wikipedia.org/wiki/Gims" target="_blank">
+					<img src="images/maitre_gims_2.jpeg">
+					<h2>Maitre Gims</h2>
+					<p>Artiste rappeur et mélomane</p></a>
+				</li>
+				<li><a href="https://fr.wikipedia.org/wiki/Ang%C3%A9lique_Kidjo">
+					<img src="images/angelique_2.jpg">
+					<h2>Angélique Kidjo</h2>
+					<p>Pop africaine, Zouk, Jazz</p></a>
+				</li>
+				<li><a href="https://fr.wikipedia.org/wiki/Fanicko" target="_blank">
+					<img src="images/fanicko_2.jpg">
+					<h2>Fanicko</h2>
+					<p>Musique urbaine</p></a>
+				</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+	<div data-role="page" id="partenaire">
+		<div data-role="header">
+			<button class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-right"><a href="#acceuil">Principale</a></button>
+			<h1>
+				FEQ
+			</h1>
+		</div>
+		
+		<div data-role="content">
+			<h2 style="text-align: center;">
+				Nos partenaires
+			</h2>
+
+			<table data-inset="">
+				<tr>
+					<td colspan="2">
+						<h3>
+							PARTENAIRES MAJEURS
+						</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img  class="logo" src="images/bell.png"/>
+						
+					</td>
+					<td>
+						<img  class="logo" src="images/coors_lights.jpg">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img  class="logo" src="images/dejardins.png">
+						
+					</td>
+					<td>
+						<img  class="logo" src="images/loto_quebec.png">
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img  class="logo" src="images/hydro_quebec.png">
+						
+					</td>
+					<td>
+						<img  class="logo" src="images/lait_logo.png">
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img  class="logo" src="images/sirius_logo.png">
+						
+					</td>
+					<td>
+						<img  class="logo" style="width: 100px"; src="images/ford_logo.png">
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img  class="logo" style="width: 100px"; src="images/saq_logo.jpeg">
+					</td>
+					<td>
+						<img  class="logo" style="width: 100px"; src="images/rio_logo.png">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+
+	<div data-role="page" id="video" data-theme="a">
+		<div data-role="header">
+			<button class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-right"><a href="#acceuil">Principale</a></button>
+			<h1>
+				FEQ
+			</h1>
+		</div>
+		
+		<div data-role="content">
+			<h2 style="text-align: center;">
+				Vidéos 2017
+			</h2>
+			<table data-theme="b">
+				<tr>
+					<td>
+						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Filovecoupedecale%2Fvideos%2F471298847001753%2F&show_text=1&width=560" width="400" height="407" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1256846104463301%2Fvideos%2F2264526240533944%2F&show_text=1&width=560" width="400" height="426" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fangeliquekidjo%2Fvideos%2F10153743483272679%2F&show_text=1&width=560" width="400" height="464" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Farturo.vidal.904%2Fvideos%2F1296597140424358%2F&show_text=1&width=560" width="400" height="407" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+	<div data-role="page" id="sondage" data-theme="a">
+		<div data-role="header">
+			<button class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-right"><a href="#acceuil">Principale</a></button>
+			<h1>
+				FEQ
+			</h1>
+		</div>
+		
+		<div data-role="content">
+			<h2>
+				Nous donner un feedbback
+			</h2>
+			<h2>
+				FEQ
+			</h2>
+			<form action="" method="POST">
+				<label for="nom">Nom :</label>
+				<input type="text" name="nom" id="nom" data-mini="true" />
+				<HR style="opacity: 0.5;"/>
+				<label for="mail">Votre email :</label>
+				<input type="email" name="mail" id="mail" data-mini="true" />
+				<HR style="opacity: 0.5;"/>
+				<label for="slider-1">Aimez vous le festival ?</label>
+				<input type="range" name="slider-1" id="slider-1" value="50" min="0" max="100" /> <span style="float: right;">100 étant le nirvana</span><br/>
+				<HR style="opacity: 0.5;"/>
+				<label for="flip-checkbox-2">Vous avez participé au FEQ ?</label>
+				    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Oui" data-off-text="Non" data-wrapper-class="custom-label-flipswitch">
+				<HR style="opacity: 0.5;"/>
+				<label for="flip-checkbox-3">Reviendrez-vous ?</label>
+				    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="Oui" data-off-text="Non" data-wrapper-class="custom-label-flipswitch">
+				<HR style="opacity: 0.5;"/>
+				<label for="basic">D'autres remarques pour les organisateurs ?</label>
+				<input type="text" name="remarques" id="remarques" value=""  />
+				<HR style="opacity: 0.5;"/>
+
+				<input type="button" name="" value="Soumettre">
+			</form>
+			
+		</div>
+
+		<div data-role="footer">
+			<h2>Fait par Akim Soulé</h2>
+		</div>
+	</div>
+
+</body>
+</html>
